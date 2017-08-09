@@ -20,9 +20,9 @@ dirs = os.listdir(path)
 #Print out all the text files without extension and add to list called "text_files"
 text_files = []
 for file in dirs:
-		filesplit = os.path.splitext(file)
-		if filesplit[1] == '.txt':
-			text_files.append(file)
+	filesplit = os.path.splitext(file)
+	if filesplit[1] == '.txt':
+		text_files.append(file)
 
 #opens each file from text_list and reads it to p_read
 for text in text_files:
